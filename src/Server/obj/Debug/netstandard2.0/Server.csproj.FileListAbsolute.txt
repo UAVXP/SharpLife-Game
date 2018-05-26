@@ -1,0 +1,15 @@
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\obj\Debug\netstandard2.0\Server.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\obj\Debug\netstandard2.0\Server.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\obj\Debug\netstandard2.0\Server.AssemblyInfoInputs.cache
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\obj\Debug\netstandard2.0\Server.AssemblyInfo.cs
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\bin\Debug\netstandard2.0\Server.deps.json
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\bin\Debug\netstandard2.0\Server.dll
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\bin\Debug\netstandard2.0\Server.pdb
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\obj\Debug\netstandard2.0\Server.dll
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\SharpLife\Server\obj\Debug\netstandard2.0\Server.pdb
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\Game\Server\obj\Debug\netstandard2.0\Server.csprojAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\Game\Server\obj\Debug\netstandard2.0\Server.csproj.CoreCompileInputs.cache
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\Game\Server\obj\Debug\netstandard2.0\Server.AssemblyInfoInputs.cache
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\Game\Server\obj\Debug\netstandard2.0\Server.AssemblyInfo.cs
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\Game\Server\obj\Debug\netstandard2.0\Server.dll
+C:\Users\Sam\Documents\GitHub\SharpLife_dev\Game\Server\obj\Debug\netstandard2.0\Server.pdb
