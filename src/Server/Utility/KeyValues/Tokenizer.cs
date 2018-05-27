@@ -60,7 +60,7 @@ namespace Server.Utility.KeyValues
         /// <summary>
         /// Characters to treat as their own tokens
         /// </summary>
-        private readonly char[] SingleCharacters =
+        private static readonly char[] SingleCharacters =
         {
             '{',
             '}',
