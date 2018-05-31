@@ -13,7 +13,11 @@
 *
 ****/
 
-using Server.Engine.API;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.API;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Entities;
 
 namespace Server.Engine
 {
@@ -23,6 +27,7 @@ namespace Server.Engine
 
         public static void Line(in Vector vecStart, in Vector vecEnd, TraceFlags flags, Edict pentIgnore, out TraceResult ptr)
         {
+            //TODO: could use out var
             ptr = new TraceResult();
 
             EngineTrace.Line(in vecStart, in vecEnd, flags, pentIgnore, out ptr);

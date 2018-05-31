@@ -13,6 +13,11 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Engine.Sound;
+using GoldSource.Shared.Entities;
 using Server.Engine;
 using Server.Game.Entities.Characters.NPCs;
 using Server.Game.Entities.MetaData;
@@ -708,7 +713,7 @@ namespace Server.Game.Entities
 
         /// <summary>
         /// Gets the last think time. Set by the engine for brush entities only (MoveType.Push)
-	    /// Should be used with brush entities when setting next think times (MoveType.Push); use GetLastThink() + delay
+        /// Should be used with brush entities when setting next think times (MoveType.Push); use GetLastThink() + delay
         /// For other movetypes, use Engine.Globals.Time + delay
         /// </summary>
         /// <returns></returns>

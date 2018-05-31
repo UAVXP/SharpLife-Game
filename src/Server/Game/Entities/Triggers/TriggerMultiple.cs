@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 using System.Diagnostics;
 
@@ -72,11 +72,11 @@ namespace Server.Game.Entities.Triggers
                  || ((SpawnFlags & SF.Pushables) != 0 && pOther.ClassName == "func_pushable"))
             {
 #if false
-		// if the trigger has an angles field, check player's facing direction
-		if (MoveDirection != WorldConstants.g_vecZero)
-		{
-			MathUtils.MakeVectors(pOther.Angles);
-			if (Engine.Globals.ForwardVector.DotProduct(MoveDirection) < 0)
+        // if the trigger has an angles field, check player's facing direction
+        if (MoveDirection != WorldConstants.g_vecZero)
+        {
+            MathUtils.MakeVectors(pOther.Angles);
+            if (Engine.Globals.ForwardVector.DotProduct(MoveDirection) < 0)
             {
                 return;         // not facing the right way
             }

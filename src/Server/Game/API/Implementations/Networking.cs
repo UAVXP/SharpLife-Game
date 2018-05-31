@@ -13,9 +13,14 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.API;
-using Server.Engine.Networking;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.API;
+using GoldSource.Server.Engine.Game.API;
+using GoldSource.Server.Engine.Networking;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Engine.Networking;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities;
 using Server.Game.Entities.Characters;
 using Server.Game.Entities.Weapons;

@@ -13,6 +13,8 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Shared.Engine.Sound;
 using Server.Engine;
 
 namespace Server.Game.Entities.Buttons

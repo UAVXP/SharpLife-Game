@@ -13,8 +13,10 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.API;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.Entities;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Game.GlobalState;
@@ -141,7 +143,7 @@ namespace Server.Game.API.Implementations
 
                 //TODO: can check if the entity is a template and do stuff here
             }
-            catch(Exception)
+            catch (Exception)
             {
                 //On failure always free the edict
                 //This will also free the entity instance if it has been assigned

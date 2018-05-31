@@ -13,7 +13,8 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Game.GlobalState;
 using Server.Persistence;
@@ -130,7 +131,7 @@ namespace Server.Game.Entities.Triggers
 
             for (BaseEntity entity = null; (entity = EntUtils.FindEntityByString(entity, "classname", "multi_manager")) != null;)
             {
-                if( entity.HasTarget(TargetName))
+                if (entity.HasTarget(TargetName))
                 {
                     Entities.Add(new MultiEntity(entity));
                 }

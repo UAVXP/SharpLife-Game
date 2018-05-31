@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
 using Server.Game.Entities;
 
 namespace Server.Persistence

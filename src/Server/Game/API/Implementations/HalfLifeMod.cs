@@ -13,10 +13,15 @@
 *
 ****/
 
+using GoldSource.Server.Engine.API;
+using GoldSource.Server.Engine.CVar;
+using GoldSource.Server.Engine.Entities;
+using GoldSource.Server.Engine.Game.API;
+using GoldSource.Shared.Engine.FileSystem;
+using GoldSource.Shared.Engine.PlayerPhysics;
+using GoldSource.Shared.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using Server.Engine;
-using Server.Engine.API;
-using Server.Engine.CVar;
 using Server.Game.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Game.Materials;
@@ -62,7 +67,7 @@ namespace Server.Game.API.Implementations
             Engine.Server = ServiceProvider.GetRequiredService<IEngineServer>();
             Engine.Globals = ServiceProvider.GetRequiredService<IGlobalVars>();
             Engine.FileSystem = ServiceProvider.GetRequiredService<IFileSystem>();
-            Trace.EngineTrace = ServiceProvider.GetRequiredService<ITrace>();
+            Server.Engine.Trace.EngineTrace = ServiceProvider.GetRequiredService<ITrace>();
             Engine.EntityDictionary = ServiceProvider.GetRequiredService<IEntityDictionary>();
             Engine.EntityRegistry = ServiceProvider.GetRequiredService<IEntityRegistry>();
             Engine.Entities = ServiceProvider.GetRequiredService<IEngineEntities>();

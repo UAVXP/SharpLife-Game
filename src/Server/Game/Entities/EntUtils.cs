@@ -13,8 +13,11 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Entities;
 using Server.Engine;
-using Server.Engine.API;
 using Server.Game.GlobalState;
 using Server.Utility;
 using System;
@@ -239,7 +242,7 @@ namespace Server.Game.Entities
             }
 
             return Engine.Server.EntitiesInPVS(entity.Edict())?.Entity();
-         }
+        }
 
         public static int EntIndex(Edict pEdict)
         {
@@ -254,7 +257,7 @@ namespace Server.Game.Entities
         }
 
         public static T IndexEnt<T>(int edictNum)
-            where T: BaseEntity
+            where T : BaseEntity
         {
             var edict = Engine.EntityDictionary.EdictByIndex(edictNum);
 

@@ -13,6 +13,9 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Entities;
 using Server.Engine;
 using Server.Game.Entities.Characters.NPCs;
 using Server.Game.Entities.MetaData;

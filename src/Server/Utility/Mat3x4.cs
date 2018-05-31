@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
 using System;
 
 namespace Server.Utility

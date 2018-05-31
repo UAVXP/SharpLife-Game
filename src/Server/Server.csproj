@@ -37,8 +37,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Managed-Server">
-      <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\Managed-Server.dll</HintPath>
+    <Reference Include="GoldSource.Mathlib">
+      <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\GoldSource.Mathlib.dll</HintPath>
+    </Reference>
+    <Reference Include="GoldSource.Server.Engine">
+      <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\GoldSource.Server.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="GoldSource.Shared">
+      <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\GoldSource.Shared.dll</HintPath>
     </Reference>
   </ItemGroup>
 

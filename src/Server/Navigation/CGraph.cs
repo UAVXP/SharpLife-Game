@@ -14,6 +14,10 @@
 ****/
 
 using Force.Crc32;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Entities;
 using Server.Engine;
 using Server.Game.Entities;
 using Server.Game.Entities.Characters.NPCs;
@@ -185,12 +189,12 @@ namespace Server.Game.Navigation
                     }
 
 #if false
-			
-			        if ( (m_pNodes[ i ].m_afNodeInfo & bits_NODE_WATER) != (m_pNodes[ j ].m_afNodeInfo & bits_NODE_WATER) )
-			        {
-				        // don't connect water nodes to air nodes or land nodes. It just wouldn't be prudent at this juncture.
-				        continue;
-			        }
+            
+                    if ( (m_pNodes[ i ].m_afNodeInfo & bits_NODE_WATER) != (m_pNodes[ j ].m_afNodeInfo & bits_NODE_WATER) )
+                    {
+                        // don't connect water nodes to air nodes or land nodes. It just wouldn't be prudent at this juncture.
+                        continue;
+                    }
 #else
                     if ((m_pNodes[i].m_afNodeInfo & NodeType.Group_Realm) != (m_pNodes[j].m_afNodeInfo & NodeType.Group_Realm))
                     {
@@ -539,39 +543,39 @@ namespace Server.Game.Navigation
 
 #if false
 
-	if (m_fRoutingComplete)
-	{
-		// This will draw the entire path that was generated for the monster.
+    if (m_fRoutingComplete)
+    {
+        // This will draw the entire path that was generated for the monster.
 
-		for ( int i = 0 ; i < iNumPathNodes - 1 ; i++ )
-		{
-			MESSAGE_BEGIN( MSG_BROADCAST, SVC_TEMPENTITY );
-				WRITE_BYTE( TE_SHOWLINE);
-				
-				WRITE_COORD( m_pNodes[ piPath[ i ] ].m_vecOrigin.x );
-				WRITE_COORD( m_pNodes[ piPath[ i ] ].m_vecOrigin.y );
-				WRITE_COORD( m_pNodes[ piPath[ i ] ].m_vecOrigin.z + NODE_HEIGHT );
+        for ( int i = 0 ; i < iNumPathNodes - 1 ; i++ )
+        {
+            MESSAGE_BEGIN( MSG_BROADCAST, SVC_TEMPENTITY );
+                WRITE_BYTE( TE_SHOWLINE);
+                
+                WRITE_COORD( m_pNodes[ piPath[ i ] ].m_vecOrigin.x );
+                WRITE_COORD( m_pNodes[ piPath[ i ] ].m_vecOrigin.y );
+                WRITE_COORD( m_pNodes[ piPath[ i ] ].m_vecOrigin.z + NODE_HEIGHT );
 
-				WRITE_COORD( m_pNodes[ piPath[ i + 1 ] ].m_vecOrigin.x );
-				WRITE_COORD( m_pNodes[ piPath[ i + 1 ] ].m_vecOrigin.y );
-				WRITE_COORD( m_pNodes[ piPath[ i + 1 ] ].m_vecOrigin.z + NODE_HEIGHT );
-			MESSAGE_END();
-		}
-	}
+                WRITE_COORD( m_pNodes[ piPath[ i + 1 ] ].m_vecOrigin.x );
+                WRITE_COORD( m_pNodes[ piPath[ i + 1 ] ].m_vecOrigin.y );
+                WRITE_COORD( m_pNodes[ piPath[ i + 1 ] ].m_vecOrigin.z + NODE_HEIGHT );
+            MESSAGE_END();
+        }
+    }
 
 #endif
 #if false // MAZE map
-	MESSAGE_BEGIN( MSG_BROADCAST, SVC_TEMPENTITY );
-		WRITE_BYTE( TE_SHOWLINE);
-		
-		WRITE_COORD( m_pNodes[ 4 ].m_vecOrigin.x );
-		WRITE_COORD( m_pNodes[ 4 ].m_vecOrigin.y );
-		WRITE_COORD( m_pNodes[ 4 ].m_vecOrigin.z + NODE_HEIGHT );
+    MESSAGE_BEGIN( MSG_BROADCAST, SVC_TEMPENTITY );
+        WRITE_BYTE( TE_SHOWLINE);
+        
+        WRITE_COORD( m_pNodes[ 4 ].m_vecOrigin.x );
+        WRITE_COORD( m_pNodes[ 4 ].m_vecOrigin.y );
+        WRITE_COORD( m_pNodes[ 4 ].m_vecOrigin.z + NODE_HEIGHT );
 
-		WRITE_COORD( m_pNodes[ 9 ].m_vecOrigin.x );
-		WRITE_COORD( m_pNodes[ 9 ].m_vecOrigin.y );
-		WRITE_COORD( m_pNodes[ 9 ].m_vecOrigin.z + NODE_HEIGHT );
-	MESSAGE_END();
+        WRITE_COORD( m_pNodes[ 9 ].m_vecOrigin.x );
+        WRITE_COORD( m_pNodes[ 9 ].m_vecOrigin.y );
+        WRITE_COORD( m_pNodes[ 9 ].m_vecOrigin.z + NODE_HEIGHT );
+    MESSAGE_END();
 #endif
 
             return iNumPathNodes;
@@ -743,44 +747,44 @@ namespace Server.Game.Navigation
             }
 
 #if false
-	        // Verify our answers.
-	        //
-	        int iNearestCheck = -1;
-	        m_flShortest = 8192;// find nodes within this radius
+            // Verify our answers.
+            //
+            int iNearestCheck = -1;
+            m_flShortest = 8192;// find nodes within this radius
 
-	        for (var i = 0 ; i < m_cNodes ; ++i)
-	        {
-		        float flDist = ( vecOrigin - m_pNodes[ i ].m_vecOriginPeek ).Length();
+            for (var i = 0 ; i < m_cNodes ; ++i)
+            {
+                float flDist = ( vecOrigin - m_pNodes[ i ].m_vecOriginPeek ).Length();
 
-		        if ( flDist < m_flShortest )
-		        {
-			        // make sure that vecOrigin can trace to this node!
-			        UTIL_TraceLine ( vecOrigin, m_pNodes[ i ].m_vecOriginPeek, ignore_monsters, 0, &tr );
+                if ( flDist < m_flShortest )
+                {
+                    // make sure that vecOrigin can trace to this node!
+                    UTIL_TraceLine ( vecOrigin, m_pNodes[ i ].m_vecOriginPeek, ignore_monsters, 0, &tr );
 
-			        if ( tr.flFraction == 1.0 )
-			        {
-				        iNearestCheck = i;
-				        m_flShortest = flDist;
-			        }
-		        }
-	        }
+                    if ( tr.flFraction == 1.0 )
+                    {
+                        iNearestCheck = i;
+                        m_flShortest = flDist;
+                    }
+                }
+            }
 
-	        if (iNearestCheck != m_iNearest)
-	        {
-		        ALERT( at_aiconsole, "NOT closest %d(%f,%f,%f) %d(%f,%f,%f).\n",
-			        iNearestCheck,
-			        m_pNodes[iNearestCheck].m_vecOriginPeek.x,
-			        m_pNodes[iNearestCheck].m_vecOriginPeek.y,
-			        m_pNodes[iNearestCheck].m_vecOriginPeek.z,
-			        m_iNearest,
-			        (m_iNearest == -1?0.0:m_pNodes[m_iNearest].m_vecOriginPeek.x),
-			        (m_iNearest == -1?0.0:m_pNodes[m_iNearest].m_vecOriginPeek.y),
-			        (m_iNearest == -1?0.0:m_pNodes[m_iNearest].m_vecOriginPeek.z));
-	        }
-	        if (m_iNearest == -1)
-	        {
-		        ALERT(at_aiconsole, "All that work for nothing.\n");
-	        }
+            if (iNearestCheck != m_iNearest)
+            {
+                ALERT( at_aiconsole, "NOT closest %d(%f,%f,%f) %d(%f,%f,%f).\n",
+                    iNearestCheck,
+                    m_pNodes[iNearestCheck].m_vecOriginPeek.x,
+                    m_pNodes[iNearestCheck].m_vecOriginPeek.y,
+                    m_pNodes[iNearestCheck].m_vecOriginPeek.z,
+                    m_iNearest,
+                    (m_iNearest == -1?0.0:m_pNodes[m_iNearest].m_vecOriginPeek.x),
+                    (m_iNearest == -1?0.0:m_pNodes[m_iNearest].m_vecOriginPeek.y),
+                    (m_iNearest == -1?0.0:m_pNodes[m_iNearest].m_vecOriginPeek.z));
+            }
+            if (m_iNearest == -1)
+            {
+                ALERT(at_aiconsole, "All that work for nothing.\n");
+            }
 #endif
             m_Cache[hash].v = vecOrigin;
             m_Cache[hash].n = (short)m_iNearest;
@@ -1562,21 +1566,21 @@ namespace Server.Game.Navigation
                                     }
                                 }
 #if false
-							// Well, at first glance, this should work, but actually it's safer
-							// to be told explictly that you can take a series of node in a
-							// particular direction. Some links don't appear to have links in
-							// the opposite direction.
-							//
-							for (iNode = cPathSize-1; iNode >= 1; iNode--)
-							{
-								int iStart = pMyPath[iNode];
-								int iNext  = pMyPath[iNode-1];
-								for (int iNode1 = iNode-1; iNode1 >= 0; iNode1--)
-								{
-									int iEnd = pMyPath[iNode1];
-									Routes[FROM_TO(iStart, iEnd)] = iNext;
-								}
-							}
+                            // Well, at first glance, this should work, but actually it's safer
+                            // to be told explictly that you can take a series of node in a
+                            // particular direction. Some links don't appear to have links in
+                            // the opposite direction.
+                            //
+                            for (iNode = cPathSize-1; iNode >= 1; iNode--)
+                            {
+                                int iStart = pMyPath[iNode];
+                                int iNext  = pMyPath[iNode-1];
+                                for (int iNode1 = iNode-1; iNode1 >= 0; iNode1--)
+                                {
+                                    int iEnd = pMyPath[iNode1];
+                                    Routes[FROM_TO(iStart, iEnd)] = iNext;
+                                }
+                            }
 #endif
                             }
                             else
@@ -1710,9 +1714,9 @@ namespace Server.Game.Navigation
                             CompressedSize += 2;
                             pRoute.Add((char)(cRepeats - 1));
 #if false
-						iLastNode = iFrom + *pRoute;
-						if (iLastNode >= m_cNodes) iLastNode -= m_cNodes;
-						else if (iLastNode < 0) iLastNode += m_cNodes;
+                        iLastNode = iFrom + *pRoute;
+                        if (iLastNode >= m_cNodes) iLastNode -= m_cNodes;
+                        else if (iLastNode < 0) iLastNode += m_cNodes;
 #endif
                             int a = iLastNode - iFrom;
                             int b = iLastNode - iFrom + m_cNodes;
@@ -1779,7 +1783,7 @@ namespace Server.Game.Navigation
             Log.Alert(AlertType.AIConsole, "Size of Routes = %d\n", nTotalCompressedSize);
 
 #if false
-	TestRoutingTables();
+    TestRoutingTables();
 #endif
             m_fRoutingComplete = true;
         }
@@ -1967,15 +1971,15 @@ namespace Server.Game.Navigation
                 HashInsert((short)link.m_iSrcNode, (short)link.m_iDestNode, (short)i);
             }
 #if false
-	        for (var i = 0; i < m_cLinks; ++i)
-	        {
-		        var link = Link(i);
-		        HashSearch((short)link.m_iSrcNode, (short)link.m_iDestNode, out var iKey);
-		        if (iKey != i)
-		        {
-			        Log.Alert(AlertType.AIConsole, $"HashLinks don't match ({i} versus {iKey})\n");
-		        }
-	        }
+            for (var i = 0; i < m_cLinks; ++i)
+            {
+                var link = Link(i);
+                HashSearch((short)link.m_iSrcNode, (short)link.m_iDestNode, out var iKey);
+                if (iKey != i)
+                {
+                    Log.Alert(AlertType.AIConsole, $"HashLinks don't match ({i} versus {iKey})\n");
+                }
+            }
 #endif
         }
 

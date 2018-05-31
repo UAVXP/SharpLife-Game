@@ -13,8 +13,9 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.API;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine.API;
+using GoldSource.Shared.Entities;
 using Server.Game;
 using Server.Game.Entities;
 using Server.Game.Entities.Characters;

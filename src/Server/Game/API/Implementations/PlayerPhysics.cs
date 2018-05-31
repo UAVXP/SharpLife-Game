@@ -13,8 +13,11 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.PlayerPhysics;
+using GoldSource.Mathlib;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Engine.PlayerPhysics;
+using GoldSource.Shared.Engine.Sound;
+using GoldSource.Shared.Entities;
 using Server.Game.Materials;
 using Server.Game.Sound;
 using Server.Utility;
@@ -1536,9 +1539,9 @@ namespace Server.Game.API.Implementations
             }
 
 #if _TFC
-	        // this is how TFC freezes players, so we don't want them climbing ladders
-	        if ( PlayerMove.MaxSpeed <= 1.0 )
-		        return;
+            // this is how TFC freezes players, so we don't want them climbing ladders
+            if ( PlayerMove.MaxSpeed <= 1.0 )
+                return;
 #endif
 
             EnginePhysics.GetModelBounds(ladder.Model, out var modelmins, out var modelmaxs);
@@ -1885,15 +1888,15 @@ namespace Server.Game.API.Implementations
             {
                 var change = normal[i] * backoff;
                 output[i] = input[i] - change;
-		        // If out velocity is too small, zero it out.
-		        if (output[i] > -StopEpsilon && output[i] < StopEpsilon)
+                // If out velocity is too small, zero it out.
+                if (output[i] > -StopEpsilon && output[i] < StopEpsilon)
                 {
                     output[i] = 0;
                 }
             }
 
-	        // Return blocking flags.
-	        return blocked;
+            // Return blocking flags.
+            return blocked;
         }
 
         private void Jump()

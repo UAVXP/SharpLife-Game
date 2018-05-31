@@ -13,7 +13,10 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Engine.Sound;
+using GoldSource.Shared.Entities;
 
 namespace Server.Game.Sound
 {

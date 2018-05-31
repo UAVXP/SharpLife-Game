@@ -13,7 +13,11 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Engine.Sound;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Game.Entities.Sound;
 using Server.Game.Entities.Weapons;
@@ -279,7 +283,7 @@ namespace Server.Game.Entities.Characters
             }
 
 #if CLIENT_WEAPONS
-            if ( m_flNextAttack > 0 )
+            if (m_flNextAttack > 0)
 #else
             if (Engine.Globals.Time < m_flNextAttack)
 #endif

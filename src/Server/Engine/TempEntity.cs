@@ -13,6 +13,8 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
 using Server.Game;
 using Server.Game.Entities;
 using System;

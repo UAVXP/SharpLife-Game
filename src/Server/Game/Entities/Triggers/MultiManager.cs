@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Persistence;
 using System;
@@ -212,7 +212,7 @@ namespace Server.Game.Entities.Triggers
         }
 
 #if _DEBUG
-	void ManagerReport();
+    void ManagerReport();
 #endif
     }
 }

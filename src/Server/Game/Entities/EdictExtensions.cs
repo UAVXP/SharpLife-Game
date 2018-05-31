@@ -13,14 +13,14 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Shared.Entities;
 
 namespace Server.Game.Entities
 {
     public static class EdictExtensions
     {
         public static T TryGetEntity<T>(this Edict edict)
-            where T: BaseEntity
+            where T : BaseEntity
         {
             return edict.PrivateData as T;
         }
@@ -31,7 +31,7 @@ namespace Server.Game.Entities
         }
 
         public static T Entity<T>(this Edict edict)
-            where T: BaseEntity
+            where T : BaseEntity
         {
             return (T)edict.PrivateData;
         }

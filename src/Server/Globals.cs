@@ -13,8 +13,8 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.CVar;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine.CVar;
 using Server.Game.Entities;
 using Server.Game.Navigation;
 

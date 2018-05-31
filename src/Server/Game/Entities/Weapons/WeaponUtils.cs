@@ -13,6 +13,9 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Entities;
 using Server.Engine;
 
 namespace Server.Game.Entities.Weapons
@@ -81,7 +84,7 @@ namespace Server.Game.Entities.Weapons
                         if (tmpTrace.Fraction < 1.0)
                         {
                             var thisDistance = (tmpTrace.EndPos - vecSrc).Length();
-                            
+
                             if (thisDistance < distance)
                             {
                                 tr = tmpTrace;

@@ -13,8 +13,10 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.API;
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.API;
+using GoldSource.Server.Engine.Game.API;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities;
 using System;
 
@@ -80,7 +82,7 @@ namespace Server.Game.API.Implementations
                 }
                 else
                 {
-                    Log.Alert( AlertType.Console, $"Can't instance {edict.Vars.ClassName}");
+                    Log.Alert(AlertType.Console, $"Can't instance {edict.Vars.ClassName}");
                 }
             }
 

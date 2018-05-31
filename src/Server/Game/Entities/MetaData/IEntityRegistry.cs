@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Shared.Entities;
 using System.Collections.Generic;
 
 namespace Server.Game.Entities.MetaData

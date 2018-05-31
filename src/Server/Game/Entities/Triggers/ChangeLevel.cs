@@ -13,14 +13,15 @@
 *
 ****/
 
+using GoldSource.Server.Engine;
+using GoldSource.Shared.Engine;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Persistence;
-using System;
 using System.Collections.Generic;
-using System.Text;
-using Server.Engine;
 using System.Diagnostics;
 using System.Linq;
+using System.Text;
 
 namespace Server.Game.Entities.Triggers
 {
@@ -301,7 +302,7 @@ namespace Server.Game.Entities.Triggers
             return true;
         }
 
-	    private static bool InTransitionVolume(BaseEntity pEntity, string volumeName)
+        private static bool InTransitionVolume(BaseEntity pEntity, string volumeName)
         {
             if ((pEntity.ObjectCaps() & EntityCapabilities.ForceTransition) != 0)
             {

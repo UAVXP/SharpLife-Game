@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
 using Server.Game.Entities.Doors;
 using Server.Game.Entities.MetaData;
 using Server.Persistence;
@@ -65,7 +65,7 @@ namespace Server.Game.Entities
             CallWhenMoveDone = func;
         }
 
-	    public Vector FinalDest;
+        public Vector FinalDest;
         public Vector FinalAngle;
 
         public DamageTypes DamageInflict;   // DMG_ damage type that the door or tigger does
@@ -208,7 +208,7 @@ namespace Server.Game.Entities
             return angles.y;
         }
 
-	    public static void AxisDir(BaseEntity entity)
+        public static void AxisDir(BaseEntity entity)
         {
             if ((entity.SpawnFlags & BaseDoor.SF.RotateZ) != 0)
             {

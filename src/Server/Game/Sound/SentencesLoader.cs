@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Server.Engine;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -96,7 +96,7 @@ namespace Server.Game.Sound
                         }
 
                         // cut out suffix numbers
-                        while ( groupIndexStart > 0 && char.IsDigit(name[groupIndexStart]))
+                        while (groupIndexStart > 0 && char.IsDigit(name[groupIndexStart]))
                         {
                             --groupIndexStart;
                         }
@@ -150,7 +150,7 @@ namespace Server.Game.Sound
                     return (groups.ToDictionary(kv => kv.Key, kv => new SentenceGroup(kv.Key, index++, kv.Value)), sentences);
                 }
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 if (e is FileNotFoundException || e is DirectoryNotFoundException)
                 {

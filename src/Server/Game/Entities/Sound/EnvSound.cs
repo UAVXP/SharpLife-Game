@@ -13,6 +13,7 @@
 *
 ****/
 
+using GoldSource.Server.Engine;
 using Server.Engine;
 using Server.Game.Entities.Characters;
 using Server.Game.Entities.MetaData;

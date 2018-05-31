@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
 using System;
 
 namespace Server.Game.Navigation
@@ -40,7 +40,7 @@ namespace Server.Game.Navigation
         *	Where to start looking in the compressed routing table (offset into m_pRouteInfo).
         *	(4 hull sizes -- smallest to largest + fly/swim), and secondly, door capability.
         */
-        public int[,] m_pNextBestNode = new int[WorldConstants.NUM_HULLS,2];
+        public int[,] m_pNextBestNode = new int[WorldConstants.NUM_HULLS, 2];
         /*
         *	Used in finding the shortest path. m_fClosestSoFar is -1 if not visited.
         *	Then it is the distance to the source. If another path uses this node

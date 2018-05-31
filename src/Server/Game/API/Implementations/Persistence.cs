@@ -13,8 +13,9 @@
 *
 ****/
 
-using Server.Engine;
-using Server.Engine.Persistence;
+using GoldSource.Server.Engine.Game.API;
+using GoldSource.Server.Engine.Persistence;
+using GoldSource.Shared.Entities;
 
 namespace Server.Game.API.Implementations
 {

@@ -13,8 +13,8 @@
 *
 ****/
 
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
-using Server.Engine;
 
 namespace Server.Game.Entities.BrushModels
 {

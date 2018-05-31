@@ -13,9 +13,11 @@
 *
 ****/
 
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.API;
+using GoldSource.Server.Engine.CVar;
+using GoldSource.Shared.Entities;
 using Server.Engine;
-using Server.Engine.API;
-using Server.Engine.CVar;
 using Server.Game.Entities;
 using Server.Game.Entities.Characters;
 using Server.Utility;

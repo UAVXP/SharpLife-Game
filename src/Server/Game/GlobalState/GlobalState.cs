@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Server.Engine;
 using Server.Persistence;
 using System;
 using System.Collections.Generic;

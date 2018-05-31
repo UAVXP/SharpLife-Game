@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Shared.Entities;
 using System.Collections.Generic;
 
 namespace Server.Game.Entities
@@ -22,7 +22,7 @@ namespace Server.Game.Entities
     /// Safe way to point to CBaseEntities who may die between frames
     /// </summary>
     /// <typeparam name="T">Type of the entity to store a reference to</typeparam>
-    public struct EHandle<T> : System.IEquatable<EHandle<T>> where T: BaseEntity
+    public struct EHandle<T> : System.IEquatable<EHandle<T>> where T : BaseEntity
     {
         //We could just store the reference directly here, but then the object would be kept alive by handles
         //This way, the reference is stored only in the edict, which can be invalidated on entity destruction

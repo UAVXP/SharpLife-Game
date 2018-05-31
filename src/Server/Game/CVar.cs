@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine.CVar;
+using GoldSource.Server.Engine.CVar;
 
 namespace Server.Game
 {

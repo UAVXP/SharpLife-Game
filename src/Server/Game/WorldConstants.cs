@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Mathlib;
 
 namespace Server.Game
 {

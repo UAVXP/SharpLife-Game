@@ -13,7 +13,10 @@
 *
 ****/
 
-using Server.Engine.API;
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.API;
+using GoldSource.Shared.Entities;
 using Server.Game.Networking;
 
 namespace Server.Engine

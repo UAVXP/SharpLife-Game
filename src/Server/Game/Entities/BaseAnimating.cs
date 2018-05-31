@@ -13,8 +13,10 @@
 *
 ****/
 
+using GoldSource.Mathlib;
+using GoldSource.Server.Engine;
+using GoldSource.Server.Engine.StudioModel;
 using Server.Engine;
-using Server.Engine.StudioModel;
 using Server.Persistence;
 using System;
 using System.Diagnostics;
@@ -578,7 +580,7 @@ namespace Server.Game.Entities
 
             int iCurrent = (Body / bodyPart.BaseIndex) % bodyPart.NumModels;
 
-            Body = (Body - (iCurrent * bodyPart.BaseIndex) +(value * bodyPart.BaseIndex));
+            Body = (Body - (iCurrent * bodyPart.BaseIndex) + (value * bodyPart.BaseIndex));
         }
 
         public int GetBodygroup(int group)
@@ -657,8 +659,8 @@ namespace Server.Game.Entities
                 };
 
                 //TODO: define constants, use int.MIN & int.MAX
-                var rmin = new Vector( 9999, 9999, 9999 );
-                var rmax = new Vector( -9999, -9999, -9999 );
+                var rmin = new Vector(9999, 9999, 9999);
+                var rmax = new Vector(-9999, -9999, -9999);
                 Vector basePosition, transformed;
 
                 for (var i = 0; i <= 1; ++i)

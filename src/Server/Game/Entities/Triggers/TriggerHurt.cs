@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Engine;
+using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 
 namespace Server.Game.Entities.Triggers
@@ -125,17 +125,17 @@ namespace Server.Game.Entities.Triggers
 
             // JAY: Cut this because it wasn't fully realized.  Damage is simpler now.
 #if false
-	switch (m_bitsDamageInflict)
-	{
-	default: break;
-	case DMG_POISON:		fldmg = POISON_DAMAGE/4; break;
-	case DMG_NERVEGAS:		fldmg = NERVEGAS_DAMAGE/4; break;
-	case DMG_RADIATION:		fldmg = RADIATION_DAMAGE/4; break;
-	case DMG_PARALYZE:		fldmg = PARALYZE_DAMAGE/4; break; // UNDONE: cut this? should slow movement to 50%
-	case DMG_ACID:			fldmg = ACID_DAMAGE/4; break;
-	case DMG_SLOWBURN:		fldmg = SLOWBURN_DAMAGE/4; break;
-	case DMG_SLOWFREEZE:	fldmg = SLOWFREEZE_DAMAGE/4; break;
-	}
+    switch (m_bitsDamageInflict)
+    {
+    default: break;
+    case DMG_POISON:		fldmg = POISON_DAMAGE/4; break;
+    case DMG_NERVEGAS:		fldmg = NERVEGAS_DAMAGE/4; break;
+    case DMG_RADIATION:		fldmg = RADIATION_DAMAGE/4; break;
+    case DMG_PARALYZE:		fldmg = PARALYZE_DAMAGE/4; break; // UNDONE: cut this? should slow movement to 50%
+    case DMG_ACID:			fldmg = ACID_DAMAGE/4; break;
+    case DMG_SLOWBURN:		fldmg = SLOWBURN_DAMAGE/4; break;
+    case DMG_SLOWFREEZE:	fldmg = SLOWFREEZE_DAMAGE/4; break;
+    }
 #endif
 
             if (fldmg < 0)
