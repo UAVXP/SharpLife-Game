@@ -37,6 +37,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Reference Include="GoldSource.FileSystem">
+      <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\GoldSource.FileSystem.dll</HintPath>
+    </Reference>
     <Reference Include="GoldSource.Mathlib">
       <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\GoldSource.Mathlib.dll</HintPath>
     </Reference>

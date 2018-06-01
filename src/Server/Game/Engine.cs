@@ -13,9 +13,9 @@
 *
 ****/
 
+using GoldSource.FileSystem;
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.Entities;
-using GoldSource.Shared.Engine.FileSystem;
 using GoldSource.Shared.Entities;
 using Server.Game.Entities.MetaData;
 using Server.Game.Sound;
