@@ -13,11 +13,11 @@
 *
 ****/
 
+using GoldSource.FileSystem;
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.CVar;
 using GoldSource.Server.Engine.Entities;
 using GoldSource.Server.Engine.Game.API;
-using GoldSource.Shared.Engine.FileSystem;
 using GoldSource.Shared.Engine.PlayerPhysics;
 using GoldSource.Shared.Entities;
 using Microsoft.Extensions.DependencyInjection;
