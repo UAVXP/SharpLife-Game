@@ -15,7 +15,7 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
-using GoldSource.Server.Engine.StudioModel;
+using GoldSource.Shared.Engine.StudioModel;
 using Server.Engine;
 using Server.Persistence;
 using System;
