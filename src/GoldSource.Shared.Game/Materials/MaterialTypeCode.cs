@@ -1,4 +1,4 @@
-/***
+﻿/***
 *
 *	Copyright (c) 1996-2001, Valve LLC. All rights reserved.
 *	
@@ -13,23 +13,22 @@
 *
 ****/
 
-namespace GoldSource.Server.Game.Game
+namespace GoldSource.Shared.Game.Materials
 {
-    /// <summary>
-    /// bullet types
-    /// </summary>
-    public enum Bullet
+    public enum MaterialTypeCode
     {
-        None = 0,
-
-        Player9MM = 1,
-        PlayerMP5 = 2,
-        Player357 = 3,
-        PlayerBuckShot = 4,
-        PlayerCrowbar = 5,
-
-        Monster9MM = 6,
-        MonsterMP5 = 7,
-        Monster12MM = 8,
+        None = '\0',
+        Concrete = 'C',
+        Dirt = 'D',
+        Flesh = 'F',
+        Grate = 'G',
+        Metal = 'M',
+        Snow = 'N',
+        Computer = 'P',
+        Slosh = 'S',
+        Tile = 'T',
+        Vent = 'V',
+        Wood = 'W',
+        Glass = 'Y',
     }
 }

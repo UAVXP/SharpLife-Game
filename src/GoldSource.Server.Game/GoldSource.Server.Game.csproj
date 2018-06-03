@@ -38,6 +38,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GoldSource.Shared.Game\GoldSource.Shared.Game.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Reference Include="GoldSource.FileSystem">
       <HintPath>$(STEAMCOMMON)\Half-Life\sharplife\dlls\GoldSource.FileSystem.dll</HintPath>
     </Reference>

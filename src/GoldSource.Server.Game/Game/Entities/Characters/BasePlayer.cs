@@ -22,6 +22,8 @@ using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
+using GoldSource.Shared.Game.Utility;
 
 namespace GoldSource.Server.Game.Game.Entities.Characters
 {
@@ -411,7 +413,7 @@ namespace GoldSource.Server.Game.Game.Entities.Characters
             Vector vecLOS;
             var flMaxDot = ViewField.Narrow;
 
-            MathUtils.MakeVectors(ViewAngle);// so we know which way we are facing
+            ServerMathUtils.MakeVectors(ViewAngle);// so we know which way we are facing
 
             while ((pObject = EntUtils.FindEntityInSphere(pObject, Origin, WorldConstants.PlayerUseSearchRadius)) != null)
             {

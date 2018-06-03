@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Game.Entities;
+using GoldSource.Server.Game.Game.Entities;
 using System;
 
 namespace GoldSource.Server.Game.Navigation

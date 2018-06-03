@@ -19,6 +19,7 @@ using GoldSource.Server.Game.Game;
 using GoldSource.Server.Game.Game.Entities;
 using GoldSource.Server.Game.Game.GlobalState;
 using GoldSource.Server.Game.Navigation;
+using GoldSource.Shared.Game;
 
 namespace GoldSource.Server.Game
 {

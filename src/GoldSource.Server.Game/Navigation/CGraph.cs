@@ -24,6 +24,7 @@ using GoldSource.Server.Game.Game.Entities.Doors;
 using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 using System;
 using System.Collections.Generic;
 using System.IO;

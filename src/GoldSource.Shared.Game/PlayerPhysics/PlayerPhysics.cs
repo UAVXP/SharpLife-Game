@@ -18,14 +18,14 @@ using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.PlayerPhysics;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Game.Materials;
-using Server.Game.Sound;
-using Server.Utility;
+using GoldSource.Shared.Game.Materials;
+using GoldSource.Shared.Game.Sound;
+using GoldSource.Shared.Game.Utility;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace GoldSource.Server.Game.Game.API.Implementations
+namespace GoldSource.Shared.Game.PlayerPhysics
 {
     //TODO: shared with client
     public sealed class PlayerPhysics : IPlayerPhysics

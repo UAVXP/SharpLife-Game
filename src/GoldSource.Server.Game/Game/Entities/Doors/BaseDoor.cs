@@ -20,6 +20,7 @@ using GoldSource.Server.Game.Persistence;
 using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 using System;
 using System.Diagnostics;
 
@@ -470,9 +471,9 @@ namespace GoldSource.Server.Game.Game.Entities.Doors
                         Vector angles = activator.Angles;
                         angles.x = 0;
                         angles.z = 0;
-                        MathUtils.MakeVectors(angles);
+                        ServerMathUtils.MakeVectors(angles);
                         //			Vector vnext = (pevToucher.origin + (pevToucher.velocity * 10)) - Origin;
-                        MathUtils.MakeVectors(activator.Angles);
+                        ServerMathUtils.MakeVectors(activator.Angles);
                         Vector vnext = (activator.Origin + (Engine.Globals.ForwardVector * 10)) - Origin;
                         if (((vec.x * vnext.y) - (vec.y * vnext.x)) < 0)
                         {

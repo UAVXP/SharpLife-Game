@@ -23,6 +23,7 @@ using GoldSource.Server.Game.GameRules;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 using System;
 
 namespace GoldSource.Server.Game.Game.Entities
@@ -829,6 +830,11 @@ namespace GoldSource.Server.Game.Game.Entities
             {
                 Log.EngineLog($"\"{player.NetName}<{userId}><{authId}><{userId}>\" {commandToLog} \"{text}\"\n");
             }
+        }
+
+        public static Vector GetAimVector(Edict edict, float speed)
+        {
+            return Engine.Server.GetAimVector(edict, speed);
         }
     }
 }

@@ -13,7 +13,7 @@
 *
 ****/
 
-using Server.Persistence;
+using GoldSource.Server.Game.Persistence;
 
 namespace GoldSource.Server.Game.Game.GlobalState
 {

@@ -15,11 +15,11 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine.API;
-using GoldSource.Server.Game.Game;
 using GoldSource.Server.Game.Game.Entities;
 using GoldSource.Server.Game.Game.Entities.Characters;
 using GoldSource.Server.Game.Game.Entities.Weapons;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 using System;
 
 namespace GoldSource.Server.Game.GameRules

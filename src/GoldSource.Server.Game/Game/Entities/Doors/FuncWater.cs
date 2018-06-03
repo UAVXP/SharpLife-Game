@@ -13,7 +13,7 @@
 *
 ****/
 
-using GoldSource.Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 
 namespace GoldSource.Server.Game.Game.Entities.Doors
 {

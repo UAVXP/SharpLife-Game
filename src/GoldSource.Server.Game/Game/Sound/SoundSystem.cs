@@ -19,9 +19,11 @@ using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.Sound;
 using GoldSource.Server.Game.Engine;
 using GoldSource.Server.Game.Game.Entities;
-using GoldSource.Server.Game.Game.Materials;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
+using GoldSource.Shared.Game.Materials;
+using GoldSource.Shared.Game.Sound;
 using System;
 using System.Linq;
 

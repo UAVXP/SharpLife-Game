@@ -13,20 +13,19 @@
 *
 ****/
 
-using System;
-
-namespace GoldSource.Server.Game.Game.Materials
+namespace GoldSource.Shared.Game
 {
-    public sealed class Material
+    /// <summary>
+    /// Spectator Movement modes (stored in pev->iuser1, so the physics code can get at them)
+    /// </summary>
+    public enum ObserverMode
     {
-        public string Name { get; }
-
-        public MaterialTypeCode Code { get; }
-
-        public Material(string name, MaterialTypeCode code)
-        {
-            Name = name ?? throw new ArgumentNullException(nameof(name));
-            Code = code;
-        }
+        None = 0,
+        ChaseLocked = 1,
+        ChaseFree = 2,
+        Roaming = 3,
+        InEye = 4,
+        MapFree = 5,
+        MapChase = 6,
     }
 }

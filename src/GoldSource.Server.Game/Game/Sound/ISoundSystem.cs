@@ -17,6 +17,7 @@ using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 
 namespace GoldSource.Server.Game.Game.Sound
 {

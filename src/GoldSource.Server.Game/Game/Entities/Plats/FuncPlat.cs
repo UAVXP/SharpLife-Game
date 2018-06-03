@@ -17,6 +17,7 @@ using GoldSource.Server.Engine;
 using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 using System.Diagnostics;
 
 namespace GoldSource.Server.Game.Game.Entities.Plats

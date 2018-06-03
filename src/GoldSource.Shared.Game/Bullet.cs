@@ -1,4 +1,4 @@
-﻿/***
+/***
 *
 *	Copyright (c) 1996-2001, Valve LLC. All rights reserved.
 *	
@@ -13,19 +13,23 @@
 *
 ****/
 
-namespace GoldSource.Server.Game.Game
+namespace GoldSource.Shared.Game
 {
     /// <summary>
-    /// Spectator Movement modes (stored in pev->iuser1, so the physics code can get at them)
+    /// bullet types
     /// </summary>
-    public enum ObserverMode
+    public enum Bullet
     {
         None = 0,
-        ChaseLocked = 1,
-        ChaseFree = 2,
-        Roaming = 3,
-        InEye = 4,
-        MapFree = 5,
-        MapChase = 6,
+
+        Player9MM = 1,
+        PlayerMP5 = 2,
+        Player357 = 3,
+        PlayerBuckShot = 4,
+        PlayerCrowbar = 5,
+
+        Monster9MM = 6,
+        MonsterMP5 = 7,
+        Monster12MM = 8,
     }
 }

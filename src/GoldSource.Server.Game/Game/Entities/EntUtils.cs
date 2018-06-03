@@ -20,6 +20,8 @@ using GoldSource.Server.Game.Game.GlobalState;
 using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
+using GoldSource.Shared.Game.Utility;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -228,7 +230,7 @@ namespace GoldSource.Server.Game.Game.Entities
 
         public static BaseEntity FindEntityForward(BaseEntity me)
         {
-            MathUtils.MakeVectors(me.ViewAngle);
+            ServerMathUtils.MakeVectors(me.ViewAngle);
             Trace.Line(me.Origin + me.ViewOffset, me.Origin + me.ViewOffset + (Engine.Globals.ForwardVector * 8192), TraceFlags.None, me.Edict(), out var tr);
 
             return (tr.Fraction != 1.0) ? tr.Hit.TryGetEntity() : null;
@@ -562,7 +564,7 @@ namespace GoldSource.Server.Game.Game.Entities
             }
             else
             {
-                MathUtils.MakeVectors(entity.Angles);
+                ServerMathUtils.MakeVectors(entity.Angles);
                 entity.MoveDirection = Engine.Globals.ForwardVector;
             }
 
@@ -638,7 +640,7 @@ namespace GoldSource.Server.Game.Game.Entities
                 return WorldConstants.g_vecZero;
             }
 
-            MathUtils.MakeVectors(entity.Angles);
+            ServerMathUtils.MakeVectors(entity.Angles);
 
             // toss a little bit to the left or right, not right down on the enemy's bean (head). 
             vecSpot2 += Engine.Globals.RightVector * (EngineRandom.Float(-8, 8) + EngineRandom.Float(-16, 16));

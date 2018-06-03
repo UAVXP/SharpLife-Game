@@ -13,10 +13,12 @@
 *
 ****/
 
+using GoldSource.FileSystem;
+using Serilog;
 using System;
 using System.Collections.Generic;
 
-namespace GoldSource.Server.Game.Game.Materials
+namespace GoldSource.Shared.Game.Materials
 {
     public sealed class MaterialsSystem
     {
@@ -263,9 +265,9 @@ namespace GoldSource.Server.Game.Game.Materials
             MaterialTypes.Add(materialType.Code, materialType);
         }
 
-        public void LoadMaterialsFromFile(string fileName)
+        public void LoadMaterialsFromFile(IFileSystem fileSystem, ILogger logger, string fileName)
         {
-            var materials = MaterialsLoader.LoadMaterials(fileName);
+            var materials = MaterialsLoader.LoadMaterials(fileSystem, logger, fileName);
 
             MaterialsList = (IReadOnlyDictionary<string, Material>)(materials ?? new Dictionary<string, Material>());
         }

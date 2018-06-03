@@ -18,6 +18,7 @@ using GoldSource.Server.Engine;
 using GoldSource.Server.Game.Engine;
 using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Engine.StudioModel;
+using GoldSource.Shared.Game;
 using System;
 using System.Diagnostics;
 using System.Linq;

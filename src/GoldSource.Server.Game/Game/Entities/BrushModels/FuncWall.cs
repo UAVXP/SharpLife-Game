@@ -15,6 +15,7 @@
 
 using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 
 namespace GoldSource.Server.Game.Game.Entities.BrushModels
 {

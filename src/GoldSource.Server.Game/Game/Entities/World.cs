@@ -15,6 +15,7 @@
 
 using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Server.Game.GameRules;
+using GoldSource.Shared.Game;
 
 namespace GoldSource.Server.Game.Game.Entities
 {

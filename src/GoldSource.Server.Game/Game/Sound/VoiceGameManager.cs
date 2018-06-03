@@ -16,11 +16,11 @@
 using GoldSource.Server.Engine;
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.CVar;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities;
-using Server.Game.Entities.Characters;
-using Server.Utility;
 using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;

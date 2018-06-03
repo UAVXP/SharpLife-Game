@@ -14,12 +14,9 @@
 ****/
 
 using GoldSource.Mathlib;
-using GoldSource.Server.Engine;
-using GoldSource.Server.Engine.API;
-using GoldSource.Shared.Entities;
 using System;
 
-namespace GoldSource.Server.Game.Utility
+namespace GoldSource.Shared.Game.Utility
 {
     public static class MathUtils
     {
@@ -38,48 +35,9 @@ namespace GoldSource.Server.Game.Utility
         /// </summary>
         public const int ROLL = 2;
 
-        public static TraceResult GetGlobalTrace()
-        {
-            return Game.Engine.Globals.GlobalTrace;
-        }
-
-        public static void MakeVectors(Vector vecAngles)
-        {
-            AngleVectors(vecAngles, out var forward, out var right, out var up);
-            Game.Engine.Globals.ForwardVector = forward;
-            Game.Engine.Globals.RightVector = right;
-            Game.Engine.Globals.UpVector = up;
-        }
-
         public static void MakeVectorsPrivate(Vector vecAngles, out Vector p_vForward, out Vector p_vRight, out Vector p_vUp)
         {
             AngleVectors(vecAngles, out p_vForward, out p_vRight, out p_vUp);
-        }
-
-        public static void MakeAimVectors(Vector vecAngles)
-        {
-            vecAngles.x = -vecAngles.x;
-
-            MakeVectors(vecAngles);
-        }
-
-        public static void MakeInvVectors(Vector vec, IGlobalVars pgv)
-        {
-            MakeVectors(vec);
-
-            pgv.RightVector *= -1;
-
-            var forward = pgv.ForwardVector;
-            var right = pgv.RightVector;
-            var up = pgv.UpVector;
-
-            Utils.Swap(ref forward.y, ref right.x);
-            Utils.Swap(ref forward.z, ref up.x);
-            Utils.Swap(ref right.z, ref up.y);
-
-            pgv.ForwardVector = forward;
-            pgv.RightVector = right;
-            pgv.UpVector = up;
         }
 
         public static void AngleVectors(Vector angles, out Vector forward, out Vector right, out Vector up)
@@ -329,12 +287,6 @@ namespace GoldSource.Server.Game.Utility
                     delta += 360;
             }
             return delta;
-        }
-
-        //TODO: not a math function
-        public static Vector GetAimVector(Edict edict, float speed)
-        {
-            return Game.Engine.Server.GetAimVector(edict, speed);
         }
 
         public static Vector ClampVectorToBox(Vector input, Vector clampSize)

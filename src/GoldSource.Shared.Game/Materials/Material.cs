@@ -13,22 +13,20 @@
 *
 ****/
 
-namespace GoldSource.Server.Game.Game.Materials
+using System;
+
+namespace GoldSource.Shared.Game.Materials
 {
-    public enum MaterialTypeCode
+    public sealed class Material
     {
-        None = '\0',
-        Concrete = 'C',
-        Dirt = 'D',
-        Flesh = 'F',
-        Grate = 'G',
-        Metal = 'M',
-        Snow = 'N',
-        Computer = 'P',
-        Slosh = 'S',
-        Tile = 'T',
-        Vent = 'V',
-        Wood = 'W',
-        Glass = 'Y',
+        public string Name { get; }
+
+        public MaterialTypeCode Code { get; }
+
+        public Material(string name, MaterialTypeCode code)
+        {
+            Name = name ?? throw new ArgumentNullException(nameof(name));
+            Code = code;
+        }
     }
 }

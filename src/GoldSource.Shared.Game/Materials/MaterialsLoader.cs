@@ -13,19 +13,31 @@
 *
 ****/
 
+using GoldSource.FileSystem;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace GoldSource.Server.Game.Game.Materials
+namespace GoldSource.Shared.Game.Materials
 {
     public static class MaterialsLoader
     {
-        public static IDictionary<string, Material> LoadMaterials(string fileName)
+        public static IDictionary<string, Material> LoadMaterials(IFileSystem fileSystem, ILogger logger, string fileName)
         {
+            if (fileSystem == null)
+            {
+                throw new ArgumentNullException(nameof(fileSystem));
+            }
+
+            if (logger == null)
+            {
+                throw new ArgumentNullException(nameof(logger));
+            }
+
             try
             {
-                using (var reader = new StreamReader(Engine.FileSystem.GetAbsolutePath(fileName)))
+                using (var reader = new StreamReader(fileSystem.GetAbsolutePath(fileName)))
                 {
                     var materials = new Dictionary<string, Material>();
 
@@ -68,7 +80,7 @@ namespace GoldSource.Server.Game.Game.Materials
 
                         if (materials.TryGetValue(name, out var material))
                         {
-                            Log.Message($"Material {name} is listed multiple times in materials file {fileName}, overwriting previous type {material.Code} with {type}");
+                            logger.Debug($"Material {name} is listed multiple times in materials file {fileName}, overwriting previous type {material.Code} with {type}");
                         }
 
                         materials[name] = new Material(name, type);

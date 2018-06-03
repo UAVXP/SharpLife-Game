@@ -13,8 +13,8 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using GoldSource.Server.Game.Entities.MetaData;
 
 namespace GoldSource.Server.Game.Game.Entities.Triggers
 {

@@ -14,6 +14,7 @@
 ****/
 
 using GoldSource.Mathlib;
+using GoldSource.Shared.Game.Utility;
 using System;
 
 namespace GoldSource.Server.Game.Utility

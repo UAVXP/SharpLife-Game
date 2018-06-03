@@ -13,9 +13,9 @@
 *
 ****/
 
-using GoldSource.Server.Game.Entities.MetaData;
-using Server.Game.GlobalState;
-using Server.Persistence;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.GlobalState;
+using GoldSource.Server.Game.Persistence;
 
 namespace GoldSource.Server.Game.Game.Entities.Triggers
 {

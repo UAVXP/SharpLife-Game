@@ -24,6 +24,7 @@ using GoldSource.Server.Game.Game.Entities.Weapons;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.Networking;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game;
 using System;
 using System.Collections.Generic;
 
