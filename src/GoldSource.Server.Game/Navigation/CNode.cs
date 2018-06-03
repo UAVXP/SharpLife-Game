@@ -16,7 +16,7 @@
 using GoldSource.Mathlib;
 using System;
 
-namespace Server.Game.Navigation
+namespace GoldSource.Server.Game.Navigation
 {
     /// <summary>
     /// Instance of a node

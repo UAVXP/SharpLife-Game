@@ -17,7 +17,7 @@ using GoldSource.Mathlib;
 using System;
 using System.Linq;
 
-namespace Server
+namespace GoldSource.Server.Game.Utility
 {
     public static class BitConverterUtils
     {

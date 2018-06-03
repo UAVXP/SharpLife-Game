@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// Constants that were used only by QC (maybe not used at all now)

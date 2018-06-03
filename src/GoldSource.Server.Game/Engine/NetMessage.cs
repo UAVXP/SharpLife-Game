@@ -16,10 +16,10 @@
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
 using GoldSource.Server.Engine.API;
+using GoldSource.Server.Game.Game.Networking;
 using GoldSource.Shared.Entities;
-using Server.Game.Networking;
 
-namespace Server.Engine
+namespace GoldSource.Server.Game.Engine
 {
     public static class NetMessage
     {

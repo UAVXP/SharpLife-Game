@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Persistence
+namespace GoldSource.Server.Game.Persistence
 {
     /// <summary>
     /// Marks a class field as requiring persistence

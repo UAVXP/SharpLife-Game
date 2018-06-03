@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.GameRules
+namespace GoldSource.Server.Game.GameRules
 {
     public enum ItemRespawn
     {

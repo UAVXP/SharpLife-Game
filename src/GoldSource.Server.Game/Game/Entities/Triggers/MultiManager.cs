@@ -13,14 +13,14 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// The Multimanager Entity - when fired, will fire up to 16 targets at specified times.

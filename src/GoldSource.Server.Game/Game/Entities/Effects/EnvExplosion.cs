@@ -15,14 +15,14 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities.Characters.NPCs;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities.Characters.NPCs;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Effects
+namespace GoldSource.Server.Game.Game.Entities.Effects
 {
     [LinkEntityToClass("env_explosion")]
     public class EnvExplosion : BaseMonster
@@ -109,7 +109,7 @@ namespace Server.Game.Entities.Effects
 
             var vecSpot = Origin + new Vector(0, 0, 8);// trace starts here!
 
-            Server.Engine.Trace.Line(vecSpot, vecSpot + new Vector(0, 0, -40), TraceFlags.IgnoreMonsters, Edict(), out var tr);
+            Server.Game.Engine.Trace.Line(vecSpot, vecSpot + new Vector(0, 0, -40), TraceFlags.IgnoreMonsters, Edict(), out var tr);
 
             // Pull out of the wall a bit
             if (tr.Fraction != 1.0)

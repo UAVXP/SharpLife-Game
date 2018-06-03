@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// Things that toggle (buttons/triggers/doors) need this

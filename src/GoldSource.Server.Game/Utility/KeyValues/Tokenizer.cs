@@ -16,7 +16,7 @@
 using System;
 using System.Linq;
 
-namespace Server.Utility.KeyValues
+namespace GoldSource.Server.Game.Utility.KeyValues
 {
     /// <summary>
     /// Tokenizes a string

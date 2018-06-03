@@ -14,9 +14,9 @@
 ****/
 
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     [LinkEntityToClass("trigger_hurt")]
     public class TriggerHurt : BaseTrigger

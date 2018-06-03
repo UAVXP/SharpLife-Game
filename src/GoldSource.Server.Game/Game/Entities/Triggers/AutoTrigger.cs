@@ -13,11 +13,11 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Entities.MetaData;
 using Server.Game.GlobalState;
 using Server.Persistence;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// This trigger will fire when the level spawns (or respawns if not fire once)

@@ -15,15 +15,15 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.Sound;
+using GoldSource.Server.Game.Game.Entities.Weapons;
+using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Game.Entities.Sound;
-using Server.Game.Entities.Weapons;
-using Server.Utility;
 
-namespace Server.Game.Entities.Characters
+namespace GoldSource.Server.Game.Game.Entities.Characters
 {
     [LinkEntityToClass("player")]
     public class BasePlayer : BaseCharacter

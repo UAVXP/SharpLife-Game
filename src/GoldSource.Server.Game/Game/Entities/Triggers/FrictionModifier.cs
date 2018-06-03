@@ -13,11 +13,11 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// Sets toucher's friction to FrictionFraction (1.0 = normal friction)

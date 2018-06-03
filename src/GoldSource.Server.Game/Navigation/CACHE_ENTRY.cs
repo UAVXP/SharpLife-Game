@@ -15,7 +15,7 @@
 
 using GoldSource.Mathlib;
 
-namespace Server.Game.Navigation
+namespace GoldSource.Server.Game.Navigation
 {
     public class CACHE_ENTRY
     {

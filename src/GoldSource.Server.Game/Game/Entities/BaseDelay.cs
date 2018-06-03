@@ -14,10 +14,10 @@
 ****/
 
 using GoldSource.Server.Engine;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     [LinkEntityToClass("DelayedUse")]
     public class BaseDelay : BaseEntity

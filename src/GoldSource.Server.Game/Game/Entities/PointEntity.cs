@@ -13,10 +13,10 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     [LinkEntityToClass("info_player_start")]
     public class PointEntity : BaseEntity

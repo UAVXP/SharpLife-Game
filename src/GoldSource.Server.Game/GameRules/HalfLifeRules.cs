@@ -14,13 +14,13 @@
 ****/
 
 using GoldSource.Mathlib;
+using GoldSource.Server.Game.Game;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.Weapons;
 using GoldSource.Shared.Entities;
-using Server.Game;
-using Server.Game.Entities;
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.Weapons;
 
-namespace Server.GameRules
+namespace GoldSource.Server.Game.GameRules
 {
     /// <summary>
     /// rules for the single player Half-Life game

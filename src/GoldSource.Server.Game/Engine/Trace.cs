@@ -19,7 +19,7 @@ using GoldSource.Server.Engine.API;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Entities;
 
-namespace Server.Engine
+namespace GoldSource.Server.Game.Engine
 {
     public static class Trace
     {

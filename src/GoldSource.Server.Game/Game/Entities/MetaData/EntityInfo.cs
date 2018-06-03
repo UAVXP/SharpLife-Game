@@ -13,12 +13,12 @@
 *
 ****/
 
-using Server.MetaData;
-using Server.MetaData.Accessors;
+using GoldSource.Server.Game.MetaData;
+using GoldSource.Server.Game.MetaData.Accessors;
 using System;
 using System.Collections.Generic;
 
-namespace Server.Game.Entities.MetaData
+namespace GoldSource.Server.Game.Game.Entities.MetaData
 {
     /// <summary>
     /// Contains metadata about an entity class

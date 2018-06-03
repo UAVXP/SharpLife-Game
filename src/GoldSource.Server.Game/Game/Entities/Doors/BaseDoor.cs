@@ -14,16 +14,16 @@
 ****/
 
 using GoldSource.Mathlib;
+using GoldSource.Server.Game.Game.Entities.Buttons;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
+using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.Buttons;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
-using Server.Utility;
 using System;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Doors
+namespace GoldSource.Server.Game.Game.Entities.Doors
 {
     /// <summary>
     /// <para>if two doors touch, they are assumed to be connected and operate as a unit.</para>

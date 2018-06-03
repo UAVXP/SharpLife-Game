@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Entities.MetaData
+namespace GoldSource.Server.Game.Game.Entities.MetaData
 {
     /// <summary>
     /// Links an entity class to a map entity name

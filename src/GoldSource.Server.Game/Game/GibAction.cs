@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// when calling KILLED(), a value that governs gib behavior is expected to be one of these three values

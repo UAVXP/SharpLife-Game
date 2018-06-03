@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Materials
+namespace GoldSource.Server.Game.Game.Materials
 {
     public sealed class Material
     {

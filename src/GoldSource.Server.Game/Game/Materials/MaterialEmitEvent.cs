@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Materials
+namespace GoldSource.Server.Game.Game.Materials
 {
     /// <summary>
     /// Represents the emitting of a material sound

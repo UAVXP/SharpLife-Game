@@ -16,7 +16,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Server.Utility.KeyValues
+namespace GoldSource.Server.Game.Utility.KeyValues
 {
     /// <summary>
     /// Can parse keyvalues data into data structures

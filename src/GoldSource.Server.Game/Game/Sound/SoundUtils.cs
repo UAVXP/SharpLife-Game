@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     public static class SoundUtils
     {

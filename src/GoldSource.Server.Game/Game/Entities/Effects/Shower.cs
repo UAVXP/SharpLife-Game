@@ -13,11 +13,11 @@
 *
 ****/
 
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Effects
+namespace GoldSource.Server.Game.Game.Entities.Effects
 {
     /// <summary>
     /// Spark Shower

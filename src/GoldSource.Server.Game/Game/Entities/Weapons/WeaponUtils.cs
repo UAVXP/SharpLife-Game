@@ -15,10 +15,10 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Engine;
 using GoldSource.Shared.Entities;
-using Server.Engine;
 
-namespace Server.Game.Entities.Weapons
+namespace GoldSource.Server.Game.Game.Entities.Weapons
 {
     public static class WeaponUtils
     {

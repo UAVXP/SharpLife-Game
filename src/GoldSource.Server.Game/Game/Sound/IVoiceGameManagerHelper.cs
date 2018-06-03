@@ -13,9 +13,9 @@
 *
 ****/
 
-using Server.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.Characters;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     public interface IVoiceGameManagerHelper
     {

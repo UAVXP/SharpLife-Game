@@ -14,14 +14,14 @@
 ****/
 
 using GoldSource.Server.Engine;
-using Server.Game;
-using Server.Utility;
-using Server.Utility.KeyValues;
+using GoldSource.Server.Game.Game;
+using GoldSource.Server.Game.Utility;
+using GoldSource.Server.Game.Utility.KeyValues;
 using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Server.GameRules
+namespace GoldSource.Server.Game.GameRules
 {
     /// <summary>
     /// Stores the map cycle

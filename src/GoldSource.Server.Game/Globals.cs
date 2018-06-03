@@ -15,10 +15,12 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine.CVar;
-using Server.Game.Entities;
-using Server.Game.Navigation;
+using GoldSource.Server.Game.Game;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.GlobalState;
+using GoldSource.Server.Game.Navigation;
 
-namespace Server.Game
+namespace GoldSource.Server.Game
 {
     public static class Globals
     {
@@ -102,7 +104,7 @@ namespace Server.Game
 
         public static int giAmmoIndex = 0;
 
-        public static GlobalState.GlobalState GlobalState = new GlobalState.GlobalState();
+        public static GlobalState GlobalState = new GlobalState();
 
         public static MultiDamage MultiDamage = new MultiDamage();
 

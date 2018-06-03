@@ -18,20 +18,20 @@ using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.CVar;
 using GoldSource.Server.Engine.Entities;
 using GoldSource.Server.Engine.Game.API;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Materials;
+using GoldSource.Server.Game.Game.Networking;
+using GoldSource.Server.Game.Game.Sound;
 using GoldSource.Shared.Engine.PlayerPhysics;
 using GoldSource.Shared.Entities;
 using Microsoft.Extensions.DependencyInjection;
-using Server.Engine;
-using Server.Game.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Game.Materials;
-using Server.Game.Networking;
-using Server.Game.Sound;
 using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace Server.Game.API.Implementations
+namespace GoldSource.Server.Game.Game.API.Implementations
 {
     /// <summary>
     /// Entry point for the Half-Life SDK mod
@@ -67,7 +67,7 @@ namespace Server.Game.API.Implementations
             Engine.Server = ServiceProvider.GetRequiredService<IEngineServer>();
             Engine.Globals = ServiceProvider.GetRequiredService<IGlobalVars>();
             Engine.FileSystem = ServiceProvider.GetRequiredService<IFileSystem>();
-            Server.Engine.Trace.EngineTrace = ServiceProvider.GetRequiredService<ITrace>();
+            Server.Game.Engine.Trace.EngineTrace = ServiceProvider.GetRequiredService<ITrace>();
             Engine.EntityDictionary = ServiceProvider.GetRequiredService<IEntityDictionary>();
             Engine.EntityRegistry = ServiceProvider.GetRequiredService<IEntityRegistry>();
             Engine.Entities = ServiceProvider.GetRequiredService<IEngineEntities>();

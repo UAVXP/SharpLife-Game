@@ -16,7 +16,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Server.MetaData
+namespace GoldSource.Server.Game.MetaData
 {
     /// <summary>
     /// Builds metadata from a set of classes

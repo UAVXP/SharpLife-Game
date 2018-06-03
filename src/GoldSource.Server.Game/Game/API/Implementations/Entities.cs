@@ -16,15 +16,15 @@
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
 using GoldSource.Server.Engine.Entities;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.GlobalState;
+using GoldSource.Server.Game.Utility.KeyValues;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Game.GlobalState;
-using Server.Utility.KeyValues;
 using System;
 using System.Collections.Generic;
 
-namespace Server.Game.API.Implementations
+namespace GoldSource.Server.Game.Game.API.Implementations
 {
     internal class Entities : IEntities
     {

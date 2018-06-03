@@ -26,7 +26,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Globalization;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     /// <summary>
     /// Manages which clients can hear which other clients

@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Entities.Weapons
+namespace GoldSource.Server.Game.Game.Entities.Weapons
 {
     public class BaseAmmo : BaseEntity
     {

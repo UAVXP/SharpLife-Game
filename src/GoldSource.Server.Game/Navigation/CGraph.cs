@@ -16,20 +16,21 @@
 using Force.Crc32;
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.Characters.NPCs;
+using GoldSource.Server.Game.Game.Entities.Doors;
+using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities;
-using Server.Game.Entities.Characters.NPCs;
-using Server.Game.Entities.Doors;
-using Server.Utility;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace Server.Game.Navigation
+namespace GoldSource.Server.Game.Navigation
 {
     [Serializable]
     public class CGraph
@@ -1141,8 +1142,8 @@ namespace Server.Game.Navigation
         /// <returns></returns>
         public bool CheckNODFile(string mapName)
         {
-            var bspFileName = Engine.FileSystem.GetAbsolutePath($"maps/{mapName}.bsp");
-            var graphFileName = Engine.FileSystem.GetAbsolutePath($"maps/graphs/{mapName}.nod");
+            var bspFileName = Game.Engine.FileSystem.GetAbsolutePath($"maps/{mapName}.bsp");
+            var graphFileName = Game.Engine.FileSystem.GetAbsolutePath($"maps/graphs/{mapName}.nod");
 
             try
             {
@@ -1167,7 +1168,7 @@ namespace Server.Game.Navigation
         public static CGraph FLoadGraph(string mapName)
         {
             // make sure directories have been made
-            var fileName = Engine.FileSystem.GetAbsolutePath($"maps/graphs/{mapName}.nod");
+            var fileName = Game.Engine.FileSystem.GetAbsolutePath($"maps/graphs/{mapName}.nod");
 
             Directory.CreateDirectory(Path.GetDirectoryName(fileName));
 
@@ -1214,7 +1215,7 @@ namespace Server.Game.Navigation
             }
 
             // make sure directories have been made
-            var fileName = Engine.FileSystem.GetAbsolutePath($"maps/graphs/{mapName}.nod");
+            var fileName = Game.Engine.FileSystem.GetAbsolutePath($"maps/graphs/{mapName}.nod");
 
             Directory.CreateDirectory(Path.GetDirectoryName(fileName));
 

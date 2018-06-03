@@ -18,7 +18,7 @@ using GoldSource.Server.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     /*
     *	Pitch of 100 is no pitch shift.

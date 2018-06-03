@@ -14,12 +14,12 @@
 ****/
 
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
 
-namespace Server.Game.Entities.Plats
+namespace GoldSource.Server.Game.Game.Entities.Plats
 {
     /// <summary>
     /// Trains are moving platforms that players can ride.

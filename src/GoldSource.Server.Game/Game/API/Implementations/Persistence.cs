@@ -17,7 +17,7 @@ using GoldSource.Server.Engine.Game.API;
 using GoldSource.Server.Engine.Persistence;
 using GoldSource.Shared.Entities;
 
-namespace Server.Game.API.Implementations
+namespace GoldSource.Server.Game.Game.API.Implementations
 {
     public sealed class Persistence : IPersistence
     {

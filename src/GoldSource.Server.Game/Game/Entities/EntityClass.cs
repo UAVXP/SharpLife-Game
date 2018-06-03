@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     /// <summary>
     /// Classification IDs for entity relationships

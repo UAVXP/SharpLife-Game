@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace Server.Game.Materials
+namespace GoldSource.Server.Game.Game.Materials
 {
     public static class MaterialsLoader
     {

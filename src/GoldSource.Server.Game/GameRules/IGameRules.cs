@@ -15,13 +15,13 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine.API;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.Weapons;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities;
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.Weapons;
 using System;
 
-namespace Server.GameRules
+namespace GoldSource.Server.Game.GameRules
 {
     public interface IGameRules
     {

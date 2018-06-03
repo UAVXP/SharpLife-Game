@@ -16,13 +16,13 @@
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.Game.API;
 using GoldSource.Server.Engine.Networking;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities;
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.MetaData;
 using System;
 
-namespace Server.Game.API.Implementations
+namespace GoldSource.Server.Game.Game.API.Implementations
 {
     public sealed class GameClients : IGameClients
     {

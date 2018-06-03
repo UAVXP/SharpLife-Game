@@ -15,7 +15,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// This structure is sent over the net to describe a screen shake event

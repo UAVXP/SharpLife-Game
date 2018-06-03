@@ -16,7 +16,7 @@
 using GoldSource.Shared.Entities;
 using System.Collections.Generic;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     /// <summary>
     /// Safe way to point to CBaseEntities who may die between frames

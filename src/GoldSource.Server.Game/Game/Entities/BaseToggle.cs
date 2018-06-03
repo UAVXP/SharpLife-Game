@@ -14,12 +14,12 @@
 ****/
 
 using GoldSource.Mathlib;
-using Server.Game.Entities.Doors;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
+using GoldSource.Server.Game.Game.Entities.Doors;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 using System.Diagnostics;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     public abstract class BaseToggle : BaseAnimating
     {

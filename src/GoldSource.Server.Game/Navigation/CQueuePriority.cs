@@ -21,7 +21,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Server.Game.Navigation
+namespace GoldSource.Server.Game.Navigation
 {
     /// <summary>
     /// Priority queue (smallest item out first)

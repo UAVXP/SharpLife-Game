@@ -13,16 +13,16 @@
 *
 ****/
 
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
 using System;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Buttons
+namespace GoldSource.Server.Game.Game.Entities.Buttons
 {
     /// <summary>
     /// <para>

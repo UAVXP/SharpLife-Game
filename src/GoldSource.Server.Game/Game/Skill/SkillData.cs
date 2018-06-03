@@ -16,7 +16,7 @@
 using GoldSource.Server.Engine;
 using System;
 
-namespace Server.Game.Skill
+namespace GoldSource.Server.Game.Game.Skill
 {
     public sealed class SkillData
     {

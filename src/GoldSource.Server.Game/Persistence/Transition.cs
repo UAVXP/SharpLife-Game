@@ -14,9 +14,9 @@
 ****/
 
 using GoldSource.Mathlib;
-using Server.Game.Entities;
+using GoldSource.Server.Game.Game.Entities;
 
-namespace Server.Persistence
+namespace GoldSource.Server.Game.Persistence
 {
     /// <summary>
     /// Transition data used by the persistence system

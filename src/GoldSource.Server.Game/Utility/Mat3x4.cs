@@ -16,7 +16,7 @@
 using GoldSource.Mathlib;
 using System;
 
-namespace Server.Utility
+namespace GoldSource.Server.Game.Utility
 {
     /// <summary>
     /// 3x4 matrix

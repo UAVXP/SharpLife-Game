@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Entities.MetaData
+namespace GoldSource.Server.Game.Game.Entities.MetaData
 {
     /// <summary>
     /// Specifies that a field, property or method should be initialized with a value from the entity data for the declaring entity

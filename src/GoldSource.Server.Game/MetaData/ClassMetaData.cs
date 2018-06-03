@@ -13,12 +13,12 @@
 *
 ****/
 
-using Server.MetaData.Accessors;
+using GoldSource.Server.Game.MetaData.Accessors;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Server.MetaData
+namespace GoldSource.Server.Game.MetaData
 {
     /// <summary>
     /// Contains metadata about objects
@@ -62,11 +62,11 @@ namespace Server.MetaData
                 {
                     accessor = new PropertyAccessor(prop);
                 }
-                else if(info is FieldInfo field)
+                else if (info is FieldInfo field)
                 {
                     accessor = new FieldAccessor(field);
                 }
-                else if(info is MethodInfo method)
+                else if (info is MethodInfo method)
                 {
                     accessor = new MethodAccessor(method);
                 }

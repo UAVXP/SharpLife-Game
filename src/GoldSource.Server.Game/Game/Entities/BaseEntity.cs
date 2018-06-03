@@ -15,19 +15,19 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities.Characters.NPCs;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.Weapons;
+using GoldSource.Server.Game.Game.GlobalState;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities.Characters.NPCs;
-using Server.Game.Entities.MetaData;
-using Server.Game.Entities.Weapons;
-using Server.Game.GlobalState;
-using Server.Persistence;
 using System;
 using System.Collections.Generic;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     public class BaseEntity : IEntity
     {

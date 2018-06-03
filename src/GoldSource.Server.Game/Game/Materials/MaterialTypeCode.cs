@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Materials
+namespace GoldSource.Server.Game.Game.Materials
 {
     public enum MaterialTypeCode
     {

@@ -16,7 +16,7 @@
 using GoldSource.Shared.Entities;
 using System.Collections.Generic;
 
-namespace Server.Game.Entities.MetaData
+namespace GoldSource.Server.Game.Game.Entities.MetaData
 {
     /// <summary>
     /// Contains all known entity classes

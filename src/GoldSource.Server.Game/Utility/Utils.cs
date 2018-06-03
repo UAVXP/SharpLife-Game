@@ -17,7 +17,7 @@ using GoldSource.Mathlib;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 
-namespace Server.Utility
+namespace GoldSource.Server.Game.Utility
 {
     /// <summary>
     /// General purpose utility code

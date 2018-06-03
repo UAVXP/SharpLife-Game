@@ -15,11 +15,11 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
-using Server.Game;
-using Server.Game.Entities;
+using GoldSource.Server.Game.Game;
+using GoldSource.Server.Game.Game.Entities;
 using System;
 
-namespace Server.Engine
+namespace GoldSource.Server.Game.Engine
 {
     public static class TempEntity
     {

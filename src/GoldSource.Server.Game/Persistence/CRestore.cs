@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Persistence
+namespace GoldSource.Server.Game.Persistence
 {
     public class CRestore
     {

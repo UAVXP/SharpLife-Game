@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Skill
+namespace GoldSource.Server.Game.Game.Skill
 {
     public enum SkillLevel
     {

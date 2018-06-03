@@ -13,10 +13,10 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// This plays a CD track when fired or when the player enters it's radius

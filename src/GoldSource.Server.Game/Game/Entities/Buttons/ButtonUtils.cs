@@ -14,10 +14,10 @@
 ****/
 
 using GoldSource.Mathlib;
+using GoldSource.Server.Game.Engine;
 using GoldSource.Shared.Engine.Sound;
-using Server.Engine;
 
-namespace Server.Game.Entities.Buttons
+namespace GoldSource.Server.Game.Game.Entities.Buttons
 {
     public static class ButtonUtils
     {

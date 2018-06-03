@@ -14,11 +14,11 @@
 ****/
 
 using GoldSource.Mathlib;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Doors
+namespace GoldSource.Server.Game.Game.Entities.Doors
 {
     /// <summary>
     /// <para>

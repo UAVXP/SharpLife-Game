@@ -16,11 +16,11 @@
 using GoldSource.Server.Engine;
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.Game.API;
+using GoldSource.Server.Game.Game.Entities;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities;
 using System;
 
-namespace Server.Game.API.Implementations
+namespace GoldSource.Server.Game.Game.API.Implementations
 {
     public sealed class ServerInterface : IServerInterface
     {

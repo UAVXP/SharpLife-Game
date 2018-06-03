@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     [Flags]
     public enum DamageTypes

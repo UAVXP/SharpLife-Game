@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.GlobalState
+namespace GoldSource.Server.Game.Game.GlobalState
 {
     public enum GlobalEState
     {

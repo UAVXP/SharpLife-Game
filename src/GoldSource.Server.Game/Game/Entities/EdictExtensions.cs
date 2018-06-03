@@ -15,7 +15,7 @@
 
 using GoldSource.Shared.Entities;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     public static class EdictExtensions
     {

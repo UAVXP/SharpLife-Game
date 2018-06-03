@@ -18,7 +18,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     internal static class Log
     {

@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     /// <summary>
     /// These are caps bits to indicate what an object's capabilities (currently used for save/restore and level transitions)

@@ -13,10 +13,10 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// This entity will copy its render parameters (renderfx, rendermode, rendercolor, renderamt) to its targets when triggered.

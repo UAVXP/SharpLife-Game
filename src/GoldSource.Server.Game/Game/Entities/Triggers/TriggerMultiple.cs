@@ -13,11 +13,11 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// Variable sized repeatable trigger.  Must be targeted at one or more entities.

@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     //TODO: this class is used to accumulate damage, so pass it as an argument instead of using it as a global
     public sealed class MultiDamage

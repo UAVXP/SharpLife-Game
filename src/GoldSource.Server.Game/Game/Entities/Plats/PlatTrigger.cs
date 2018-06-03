@@ -14,10 +14,10 @@
 ****/
 
 using GoldSource.Mathlib;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Plats
+namespace GoldSource.Server.Game.Game.Entities.Plats
 {
     /// <summary>
     /// UNDONE: Need to save this!!! It needs class & linkage

@@ -16,16 +16,16 @@
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
 using GoldSource.Server.Engine.API;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.Weapons;
+using GoldSource.Server.Game.GameRules;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.Weapons;
-using Server.GameRules;
 using System;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     public static class PlayerUtils
     {

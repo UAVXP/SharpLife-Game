@@ -13,11 +13,11 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Entities.MetaData;
 using Server.Persistence;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Plats
+namespace GoldSource.Server.Game.Game.Entities.Plats
 {
     [LinkEntityToClass("path_corner")]
     public class PathCorner : PointEntity

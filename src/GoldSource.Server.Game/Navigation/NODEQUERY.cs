@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Navigation
+namespace GoldSource.Server.Game.Navigation
 {
     public enum NodeQuery
     {

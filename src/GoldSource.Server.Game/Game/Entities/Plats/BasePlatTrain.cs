@@ -13,10 +13,10 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 
-namespace Server.Game.Entities.Plats
+namespace GoldSource.Server.Game.Game.Entities.Plats
 {
     public class BasePlatTrain : BaseToggle
     {

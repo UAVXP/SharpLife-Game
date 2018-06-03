@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Engine
+namespace GoldSource.Server.Game.Engine
 {
     public static class EngineRandom
     {

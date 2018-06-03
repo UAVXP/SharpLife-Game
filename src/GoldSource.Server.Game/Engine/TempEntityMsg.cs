@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Engine
+namespace GoldSource.Server.Game.Engine
 {
     public enum TempEntityMsg
     {

@@ -19,7 +19,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     /// <summary>
     /// Loads sentences text files

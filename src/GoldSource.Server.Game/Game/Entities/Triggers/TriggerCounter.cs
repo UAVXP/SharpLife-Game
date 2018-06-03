@@ -14,9 +14,9 @@
 ****/
 
 using GoldSource.Server.Engine;
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// Acts as an intermediary for an action that takes multiple inputs.

@@ -15,7 +15,7 @@
 
 using GoldSource.Mathlib;
 
-namespace Server.Game.Entities.Characters
+namespace GoldSource.Server.Game.Game.Entities.Characters
 {
     /// <summary>
     /// Base class for all characters, both players and NPCs

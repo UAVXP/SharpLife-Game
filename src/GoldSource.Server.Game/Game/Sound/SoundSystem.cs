@@ -17,15 +17,15 @@ using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.Sound;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities;
+using GoldSource.Server.Game.Game.Materials;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.Entities;
-using Server.Game.Materials;
 using System;
 using System.Linq;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     public sealed class SoundSystem : ISoundSystem
     {

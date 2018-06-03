@@ -16,7 +16,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Server.Utility
+namespace GoldSource.Server.Game.Utility
 {
     public static class EnumerableExtensions
     {

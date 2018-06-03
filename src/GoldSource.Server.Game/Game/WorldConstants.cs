@@ -15,7 +15,7 @@
 
 using GoldSource.Mathlib;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     public static class WorldConstants
     {

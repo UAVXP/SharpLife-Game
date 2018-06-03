@@ -14,12 +14,12 @@
 ****/
 
 using GoldSource.Server.Engine;
-using Server.Engine;
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 
-namespace Server.Game.Entities.Sound
+namespace GoldSource.Server.Game.Game.Entities.Sound
 {
     /// <summary>
     /// env_sound - spawn a sound entity that will set player roomtype

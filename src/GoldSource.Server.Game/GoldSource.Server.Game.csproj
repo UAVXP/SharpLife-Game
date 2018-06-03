@@ -3,8 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <AssemblyName>Server</AssemblyName>
-    <RootNamespace>Server</RootNamespace>
+    <AssemblyName>GoldSource.Server.Game</AssemblyName>
+    <RootNamespace>GoldSource.Server.Game</RootNamespace>
     <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 

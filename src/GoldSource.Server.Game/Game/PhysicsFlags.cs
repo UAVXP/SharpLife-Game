@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// Player PHYSICS FLAGS bits

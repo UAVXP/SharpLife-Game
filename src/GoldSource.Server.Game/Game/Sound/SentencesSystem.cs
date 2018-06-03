@@ -16,7 +16,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Server.Game.Sound
+namespace GoldSource.Server.Game.Game.Sound
 {
     public sealed class SentencesSystem
     {

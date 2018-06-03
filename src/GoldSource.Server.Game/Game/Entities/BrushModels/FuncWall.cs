@@ -13,10 +13,10 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.BrushModels
+namespace GoldSource.Server.Game.Game.Entities.BrushModels
 {
     /// <summary>
     /// This is just a solid wall if not inhibited

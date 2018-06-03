@@ -16,7 +16,7 @@
 using System;
 using System.ComponentModel;
 
-namespace Server.Game.Entities.MetaData
+namespace GoldSource.Server.Game.Game.Entities.MetaData
 {
     public static class KeyValueUtils
     {

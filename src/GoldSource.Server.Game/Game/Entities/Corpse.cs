@@ -13,9 +13,9 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     /// <summary>
     /// Body queue class here.... It's really just BaseEntity

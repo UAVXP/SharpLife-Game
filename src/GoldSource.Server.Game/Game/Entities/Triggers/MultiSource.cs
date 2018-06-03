@@ -14,14 +14,14 @@
 ****/
 
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.GlobalState;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Game.GlobalState;
-using Server.Persistence;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     [LinkEntityToClass("multisource")]
     public class MultiSource : PointEntity

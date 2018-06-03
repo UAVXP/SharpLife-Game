@@ -13,9 +13,9 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.SpawnPoints
+namespace GoldSource.Server.Game.Game.Entities.SpawnPoints
 {
     [LinkEntityToClass("info_player_deathmatch")]
     public class BaseDMStart : PointEntity

@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Engine
+namespace GoldSource.Server.Game.Engine
 {
     /// <summary>
     /// The Explosion effect has some flags to control performance/aesthetic features

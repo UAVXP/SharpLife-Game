@@ -16,7 +16,7 @@
 using System;
 using System.Reflection;
 
-namespace Server.MetaData.Accessors
+namespace GoldSource.Server.Game.MetaData.Accessors
 {
     /// <summary>
     /// A member accessor that can access fields

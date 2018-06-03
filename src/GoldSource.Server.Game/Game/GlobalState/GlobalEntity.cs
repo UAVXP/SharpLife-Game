@@ -15,7 +15,7 @@
 
 using Server.Persistence;
 
-namespace Server.Game.GlobalState
+namespace GoldSource.Server.Game.Game.GlobalState
 {
     public class GlobalEntity
     {

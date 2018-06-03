@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Persistence
+namespace GoldSource.Server.Game.Persistence
 {
     [Flags]
     public enum EntTableFlags : uint

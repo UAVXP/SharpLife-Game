@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Server.Persistence
+namespace GoldSource.Server.Game.Persistence
 {
     /// <summary>
     /// Marks a persisted member as being a time field

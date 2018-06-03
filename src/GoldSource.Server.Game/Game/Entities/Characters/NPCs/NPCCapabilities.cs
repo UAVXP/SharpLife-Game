@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Entities.Characters.NPCs
+namespace GoldSource.Server.Game.Game.Entities.Characters.NPCs
 {
     [Flags]
     public enum NPCCapabilities

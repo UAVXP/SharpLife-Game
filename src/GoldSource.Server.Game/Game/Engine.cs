@@ -16,12 +16,12 @@
 using GoldSource.FileSystem;
 using GoldSource.Server.Engine.API;
 using GoldSource.Server.Engine.Entities;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Sound;
+using GoldSource.Server.Game.GameRules;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
-using Server.Game.Sound;
-using Server.GameRules;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// Globals from the engine and the game

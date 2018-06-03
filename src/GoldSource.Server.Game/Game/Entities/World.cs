@@ -13,10 +13,10 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
-using Server.GameRules;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.GameRules;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     [LinkEntityToClass("worldspawn")]
     public class World : BaseEntity

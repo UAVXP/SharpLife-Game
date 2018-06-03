@@ -15,14 +15,14 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Persistence;
 using GoldSource.Shared.Engine.StudioModel;
-using Server.Engine;
-using Server.Persistence;
 using System;
 using System.Diagnostics;
 using System.Linq;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     public abstract class BaseAnimating : BaseDelay
     {

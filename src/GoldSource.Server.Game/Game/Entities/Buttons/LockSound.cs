@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Entities.Buttons
+namespace GoldSource.Server.Game.Game.Entities.Buttons
 {
     /// <summary>
     /// sounds that doors and buttons make when locked/unlocked

@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Server.Game.Materials
+namespace GoldSource.Server.Game.Game.Materials
 {
     public sealed class MaterialType
     {

@@ -16,7 +16,7 @@
 using System;
 using System.Reflection;
 
-namespace Server.MetaData.Accessors
+namespace GoldSource.Server.Game.MetaData.Accessors
 {
     /// <summary>
     /// Provides a way to access a specific member type

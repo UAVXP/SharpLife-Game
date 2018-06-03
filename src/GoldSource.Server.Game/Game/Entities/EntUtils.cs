@@ -15,16 +15,16 @@
 
 using GoldSource.Mathlib;
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Engine;
+using GoldSource.Server.Game.Game.GlobalState;
+using GoldSource.Server.Game.Utility;
 using GoldSource.Shared.Engine;
 using GoldSource.Shared.Entities;
-using Server.Engine;
-using Server.Game.GlobalState;
-using Server.Utility;
 using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Server.Game.Entities
+namespace GoldSource.Server.Game.Game.Entities
 {
     public static class EntUtils
     {

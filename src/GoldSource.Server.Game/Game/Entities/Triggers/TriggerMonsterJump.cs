@@ -13,10 +13,10 @@
 *
 ****/
 
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     [LinkEntityToClass("trigger_monsterjump")]
     public class TriggerMonsterJump : BaseTrigger

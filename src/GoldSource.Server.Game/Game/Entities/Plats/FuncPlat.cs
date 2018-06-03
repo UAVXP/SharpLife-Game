@@ -14,12 +14,12 @@
 ****/
 
 using GoldSource.Server.Engine;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 using GoldSource.Shared.Engine.Sound;
 using GoldSource.Shared.Entities;
-using Server.Game.Entities.MetaData;
 using System.Diagnostics;
 
-namespace Server.Game.Entities.Plats
+namespace GoldSource.Server.Game.Game.Entities.Plats
 {
     /// <summary>
     /// <para>Plats are always drawn in the extended position, so they will light correctly.</para>

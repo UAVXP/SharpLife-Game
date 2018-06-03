@@ -13,9 +13,9 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     /// <summary>
     /// Variable sized trigger. Triggers once, then removes itself.  You must set the key "target" to the name of another object in the level that has a matching

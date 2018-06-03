@@ -13,10 +13,10 @@
 *
 ****/
 
-using Server.Game.Entities.Characters;
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Game.Entities.Characters;
+using GoldSource.Server.Game.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Weapons
+namespace GoldSource.Server.Game.Game.Entities.Weapons
 {
     [LinkEntityToClass("monster_satchelcharge")]
     public class SatchelCharge : BaseEntity

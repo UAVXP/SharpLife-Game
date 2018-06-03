@@ -13,16 +13,16 @@
 *
 ****/
 
-using Server.MetaData;
-using Server.MetaData.Accessors;
-using Server.Persistence;
+using GoldSource.Server.Game.MetaData;
+using GoldSource.Server.Game.MetaData.Accessors;
+using GoldSource.Server.Game.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 
-namespace Server.Game.Entities.MetaData
+namespace GoldSource.Server.Game.Game.Entities.MetaData
 {
     public static class EntityRegistryUtils
     {

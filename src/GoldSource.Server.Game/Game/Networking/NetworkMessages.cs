@@ -17,7 +17,7 @@ using GoldSource.Server.Engine.API;
 using System;
 using System.Collections.Generic;
 
-namespace Server.Game.Networking
+namespace GoldSource.Server.Game.Game.Networking
 {
     public sealed class NetworkMessages : INetworkMessages
     {

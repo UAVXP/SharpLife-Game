@@ -13,10 +13,10 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
-using Server.Persistence;
+using GoldSource.Server.Game.Game.Entities.MetaData;
+using GoldSource.Server.Game.Persistence;
 
-namespace Server.Game.Entities.Triggers
+namespace GoldSource.Server.Game.Game.Entities.Triggers
 {
     [LinkEntityToClass("trigger_relay")]
     public class TriggerRelay : BaseDelay

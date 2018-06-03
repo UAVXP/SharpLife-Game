@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Networking
+namespace GoldSource.Server.Game.Game.Networking
 {
     /// <summary>
     /// Registers and stores messages

@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     /// <summary>
     /// Spectator Movement modes (stored in pev->iuser1, so the physics code can get at them)

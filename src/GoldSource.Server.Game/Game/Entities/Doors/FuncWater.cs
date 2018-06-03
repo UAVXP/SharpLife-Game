@@ -13,9 +13,9 @@
 *
 ****/
 
-using Server.Game.Entities.MetaData;
+using GoldSource.Server.Game.Entities.MetaData;
 
-namespace Server.Game.Entities.Doors
+namespace GoldSource.Server.Game.Game.Entities.Doors
 {
     /// <summary>
     /// func_water - same as a door

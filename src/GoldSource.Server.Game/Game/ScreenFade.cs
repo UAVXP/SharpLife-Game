@@ -18,7 +18,7 @@
 */
 using System.Runtime.InteropServices;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct ScreenFade

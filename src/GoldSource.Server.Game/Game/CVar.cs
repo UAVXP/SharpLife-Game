@@ -15,7 +15,7 @@
 
 using GoldSource.Server.Engine.CVar;
 
-namespace Server.Game
+namespace GoldSource.Server.Game.Game
 {
     public static class CVar
     {

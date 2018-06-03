@@ -19,7 +19,7 @@ using GoldSource.Server.Engine.API;
 using GoldSource.Shared.Entities;
 using System;
 
-namespace Server.Utility
+namespace GoldSource.Server.Game.Utility
 {
     public static class MathUtils
     {

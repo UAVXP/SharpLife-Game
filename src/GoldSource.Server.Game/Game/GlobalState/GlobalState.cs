@@ -14,12 +14,12 @@
 ****/
 
 using GoldSource.Server.Engine;
-using Server.Persistence;
+using GoldSource.Server.Game.Persistence;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Server.Game.GlobalState
+namespace GoldSource.Server.Game.Game.GlobalState
 {
     public sealed class GlobalState
     {

@@ -17,7 +17,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Server.Utility
+namespace GoldSource.Server.Game.Utility
 {
     /// <summary>
     /// Stores key-value pairs and provides operations for them

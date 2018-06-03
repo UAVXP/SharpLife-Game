@@ -13,7 +13,7 @@
 *
 ****/
 
-namespace Server.Game.Entities.Characters.NPCs
+namespace GoldSource.Server.Game.Game.Entities.Characters.NPCs
 {
     public class SquadMonster : BaseMonster
     {

@@ -15,7 +15,7 @@
 
 using System;
 
-namespace Server.Game.Navigation
+namespace GoldSource.Server.Game.Navigation
 {
     [Flags]
     public enum LinkFlags
