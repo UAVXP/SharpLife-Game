@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldSource.Client.Game", "GoldSource.Client.Game\GoldSource.Client.Game.csproj", "{53513C64-49F1-49D4-BA5D-6F81C21EAE97}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoldSource.Shared.Game", "GoldSource.Shared.Game\GoldSource.Shared.Game.csproj", "{206510C6-A539-4708-BAAD-508627CB8EF7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoldSource.Server.Game", "GoldSource.Server.Game\GoldSource.Server.Game.csproj", "{ED366321-F50E-47BD-9D76-FC5A9B56F529}"

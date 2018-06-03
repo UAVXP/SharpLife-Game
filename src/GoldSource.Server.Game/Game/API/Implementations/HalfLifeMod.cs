@@ -25,6 +25,7 @@ using GoldSource.Server.Game.Game.Networking;
 using GoldSource.Server.Game.Game.Sound;
 using GoldSource.Shared.Engine.PlayerPhysics;
 using GoldSource.Shared.Entities;
+using GoldSource.Shared.Game.API;
 using GoldSource.Shared.Game.Materials;
 using GoldSource.Shared.Game.PlayerPhysics;
 using Microsoft.Extensions.DependencyInjection;
